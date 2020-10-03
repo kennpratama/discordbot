@@ -1,17 +1,17 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const ytdl = require("ytdl-core");
+
 
 const PREFIX = '*';
 
 var version = '1.0.0';
 
-var servers = {};
+
 
 bot.on('ready', () =>{
     console.log('This bot is online!');
-    bot.user.setActivity(':lollipop: ', { type: 'PLAYING'}).catch(console.error);
+    bot.user.setActivity(':lollipop: ', { type: 'PLAYING'});
 })
 
 bot.on('guildMemberAdd', member =>{
